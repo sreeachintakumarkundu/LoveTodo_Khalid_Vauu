@@ -1,0 +1,151 @@
+@import url('https://fonts.googleapis.com/css2?family=Inconsolata:wght@200;400;500;600;700;800;900&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Dancing+Script:wght@400;500&family=Inconsolata:wght@200;400;500;600;700;800;900&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Dancing+Script:wght@400;500&family=Inconsolata:wght@200;400;500;600;700;800;900&family=Inter:wght@300&display=swap');
+*{
+    margin: 0;
+    padding: 0;
+    transition: all 0.2s;
+}
+body{
+    position: relative;
+    min-height: 100vh;
+    font-family: 'Inconsolata', monospace;
+    background: #ddd;
+}
+
+.wrapper img{
+    width: 100%;
+}
+.wrapper{
+    max-width: 400px;
+    width: 100%;
+    margin: 0 20px;
+    height: auto;
+    margin: 0 auto;
+    background: #fff;
+    padding: 20px;
+    border-radius: 10px;
+    text-align: center;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%,-50%);
+    
+}
+
+.wrapper >h1{
+    font-family: 'Dancing Script', cursive;
+    padding: 10px 0;
+    padding-bottom: 20px;
+}
+
+.image img{
+    border-radius: 10px;
+    margin-bottom: 15px;
+    border: 1px solid #ff605b;
+}
+.input_wrapper{
+    display: flex;
+    margin-bottom: 15px;
+}
+.input_wrapper input{
+    padding: 10px;
+    outline: none;
+    border: 1px solid #ddd;
+    border-radius: 5px;
+    margin: 6px 0;
+    flex: 0.9;
+    top: 50%;
+    left: 50%;
+    transform: translate(5%, -4%);
+}
+.input_wrapper input:focus{
+    border: 1px solid rgb(27, 116, 42);
+}
+.btn{
+    background:
+    black;
+    height: 50%;
+    margin-top: 5px;
+    outline: none;
+    color:#fff;
+    border: none;
+    border-radius: 3px;
+    cursor: pointer;
+    border: 1px solid rgb(0, 0, 0);
+    margin-right: -17px;
+    margin-left: 15px;
+    width: 15%;
+    padding: 7px 0;
+}
+.btn img{
+    max-width: 31%;
+    object-fit: contain;
+}
+
+.btn:hover{
+    background:rgb(255, 249, 249);
+    color:rgb(0, 0, 0);
+    cursor: pointer;
+}
+
+
+.icons img{
+    width: 20px;
+    position: relative;
+    z-index: 1;
+   
+}
+
+.tudos ul{
+    display: flex;
+    flex-direction: column-reverse;
+}
+.tudos ul li{
+    list-style: none;
+    display: flex;
+    text-align: left;
+    align-items: center;
+    background: rgb(240, 235, 235);
+    padding: 7px;
+    margin: 10px;
+    justify-content: flex-end;
+    cursor: pointer;
+    font-family: 'Inter', sans-serif;
+    position: relative;
+    transition: all 0.5s;
+
+}
+.tudos ul li span{
+    flex: 1;
+    font-family: 'Inter', sans-serif;
+
+} 
+.tudos{
+    margin-top: 50px;
+}
+
+
+.conpleteTodo::after{
+    content: '';
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    top: 0;
+    left: 0;
+    background: rgba(230, 224, 224, 0.747);
+    border-radius: 5px;
+   overflow: hidden;
+   transition: all 0.5s;
+}
+
+
+
+@media(max-width:400px){
+    .wrapper{
+       width: 90%;
+        
+    }
+}
+
+
